@@ -1,0 +1,9 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  jupyter:
+    build: .
+    image: cocu1916/my-datascience-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
